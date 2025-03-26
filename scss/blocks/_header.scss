@@ -1,0 +1,126 @@
+/* Top header */
+.site-top-header {
+	padding: 26px 0px 26px 0px;
+}
+.top {
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	gap: 32px;
+}
+.top-header-items {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.top-header-contact-wrapper {
+	gap: 8px;
+}
+.top-header-items > li {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	font-family: 'Helvetica Neue';
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 100%;
+	letter-spacing: 0px;
+	color: var(--clr-dark-charcoal);
+	opacity: 70%;
+}
+.top-header-items > li > a {
+	text-decoration: none;
+	color: var(--clr-dark-charcoal);
+	opacity: 70%;
+}
+.top-select-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+/* Header styles */
+.site-header {
+	padding: 26px 0 26px;
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header-logo-link {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	text-decoration: none;
+	font-family: 'Helvetica Neue';
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	color: var(--clr-dark-charcoal);
+}
+.header-logo-link:hover {
+	opacity: 0.6;
+}
+.header-list-items {
+	display: flex;
+	align-items: center;
+	gap: 46px;
+}
+.header-list-items > li {
+	list-style: none;
+}
+.header-list-items > li > a {
+	text-decoration: none;
+	font-family: 'Helvetica Neue';
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	text-transform: uppercase;
+	color: var(--clr-dark-charcoal);
+	transition: ease-in-out 0.3s;
+}
+.header-list-items > li > a:hover {
+	color: var(--clr-ultramarine-blue);
+}
+.header-btn-wrapper {
+	display: flex;
+	gap: 20px;
+}
+.header-input {
+	width: 117px;
+	border: 2px solid transparent;
+	outline: none;
+	font-family: 'Helvetica Neue';
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 158%;
+	transition: ease-in-out 0.5s;
+}
+.header-input:focus {
+	border-color: var(--clr-ultramarine-blue);
+}
+.btn-header {
+	padding: 8px 15px 8px 41px;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	background-color: var(--clr-ultramarine-blue);
+	border: 2px solid transparent;
+	border-radius: 6px;
+	cursor: pointer;
+	font-family: 'Helvetica Neue';
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 158%;
+	letter-spacing: 0.75%;
+	color: var(--clr-white);
+	transition: ease-in-out 0.5s;
+}
+.btn-header:hover {
+	background-color: var(--clr-cornflower-blue);
+}
+.btn-header:active {
+	transform: scale(0.9);
+}
