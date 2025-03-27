@@ -3,52 +3,51 @@
 	padding: 68px 0 76px;
 }
 .about {
-	display: flex;
-	justify-content: space-between;
-}
-.about-title-wrapper {
-	width: 542px;
-}
-.about-title {
-	margin-bottom: 16px;
-	font-family: 'Helvetica Neue';
-	font-weight: 700;
-	font-size: 48px;
-	line-height: 100%;
-	letter-spacing: 0%;
-	color: var(--clr-dark-charcoal);
-}
-.about-text {
-	font-family: 'Helvetica Neue';
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 100%;
-	letter-spacing: 0%;
-	color: var(--clr-dark-charcoal);
-	opacity: 80%;
-}
-.about-text + .about-text {
-	margin-top: 30px;
-}
-.about-btn {
-	margin-left: 335px;
-	margin-top: 60px;
-	font-family: 'Helvetica Neue';
-	font-weight: 700;
-	font-size: 18px;
-	line-height: 100%;
-	letter-spacing: 0%;
-	color: var(--clr-white);
-	background-color: var(--clr-ultramarine-blue);
-	border: 2px solid transparent;
-	border-radius: 8px;
-	padding: 15px 48px;
-	cursor: pointer;
-	transition: ease-in-out 0.5s;
-}
-.about-btn:hover {
-	background-color: var(--clr-cornflower-blue);
-}
-.about-btn:active {
-	transform: scale(0.9);
+	@include Display($space: space-between);
+	&__contents {
+		width: 542px;
+	}
+	&__title {
+		margin-bottom: 16px;
+		font-family: 'Helvetica Neue';
+		font-weight: 700;
+		font-size: 48px;
+		line-height: 100%;
+		letter-spacing: 0%;
+		color: var(--clr-dark-charcoal);
+	}
+	&__text {
+		font-family: 'Helvetica Neue';
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 100%;
+		letter-spacing: 0%;
+		color: var(--clr-dark-charcoal);
+		opacity: 80%;
+	}
+	&__text + &__text {
+		margin-top: 30px;
+	}
+	&__btn {
+		margin-left: 335px;
+		margin-top: 60px;
+		font-family: 'Helvetica Neue';
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 100%;
+		letter-spacing: 0%;
+		color: var(--clr-white);
+		background-color: var(--clr-ultramarine-blue);
+		border: 2px solid transparent;
+		border-radius: 8px;
+		padding: 15px 48px;
+		cursor: pointer;
+		transition: ease-in-out 0.5s;
+	}
+	&__btn:hover {
+		background-color: var(--clr-cornflower-blue);
+	}
+	&__btn:active {
+		transform: scale(0.9);
+	}
 }
