@@ -1,7 +1,8 @@
-@mixin Display($space) {
+@mixin Display($space, $gap) {
 	display: flex;
 	align-items: center;
 	justify-content: $space;
+	gap: $gap;
 }
 @mixin btnStyle() {
 	padding: 8px 15px 8px 41px;
@@ -26,4 +27,12 @@
 	&:active {
 		transform: scale(0.9);
 	}
+}
+@mixin Textstyle($fw, $fs, $lh, $ls, $clr) {
+	font-weight: $fw;
+	font-size: $fs;
+	line-height: $lh;
+	letter-spacing: $ls;
+	color: $clr;
+	transition: all 0.3s;
 }

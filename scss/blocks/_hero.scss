@@ -1,3 +1,6 @@
+.site-main {
+	margin-top: 195px;
+}
 /* Hero section */
 .hero-section {
 	padding: 110px 122px;
@@ -14,36 +17,41 @@
 	&__title {
 		margin-bottom: 16px;
 		font-family: 'Helvetica Neue';
-		font-weight: 700;
-		font-size: 40px;
-		line-height: 100%;
-		letter-spacing: 0%;
+		@include Textstyle(
+			$fw: 700,
+			$fs: 40px,
+			$lh: 100%,
+			$ls: 0%,
+			$clr: var(--clr-white)
+		);
 		text-transform: uppercase;
-		color: var(--clr-white);
 	}
 	&__text {
 		margin-bottom: 32px;
 		font-family: 'Helvetica Neue';
-		font-weight: 400;
-		font-size: 24px;
-		line-height: 100%;
-		letter-spacing: 0%;
-		color: var(--clr-white);
 		opacity: 80%;
+		@include Textstyle(
+			$fw: 400,
+			$fs: 24px,
+			$lh: 100%,
+			$ls: 0%,
+			$clr: var(--clr-white)
+		);
 	}
 	&__btn {
 		padding: 15px 30px;
 		background-color: var(--clr-ultramarine-blue);
-		color: var(--clr-white);
 		font-family: 'Montserrat', sans-serif;
-		font-weight: 600;
-		font-size: 18px;
-		line-height: 100%;
-		letter-spacing: 0%;
-		border-radius: 8px;
+		@include Textstyle(
+			$fw: 600,
+			$fs: 18px,
+			$lh: 100%,
+			$ls: 0%,
+			$clr: var(--clr-white)
+		);
 		cursor: pointer;
+		border-radius: 8px;
 		border: 2px solid transparent;
-		transition: ease-in-out 0.5s;
 	}
 	&__btn:hover {
 		background-color: var(--clr-cornflower-blue);

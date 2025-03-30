@@ -4,20 +4,21 @@
 }
 .catalog {
 	&__title-wrapper {
-		@include Display($space: center);
+		@include Display($space: center, $gap: 0px);
 	}
 	&__title {
 		margin-bottom: 64px;
 		font-family: 'Helvetica Neue';
-		font-weight: 700;
-		font-size: 48px;
-		line-height: 100%;
-		letter-spacing: 0%;
-		color: var(--clr-dark-charcoal);
+		@include Textstyle(
+			$fw: 700,
+			$fs: 48px,
+			$lh: 100%,
+			$ls: 0%,
+			$clr: var(--clr-dark-charcoal)
+		);
 	}
 	&__cards {
-		@include Display($space: space-between);
-		gap: 26px;
+		@include Display($space: space-between, $gap: 26px);
 	}
 	&__card {
 		width: 250px;
@@ -34,17 +35,18 @@
 	&__card-btn {
 		margin-top: 16px;
 		padding: 10px 61px;
-		color: var(--clr-white);
 		background-color: var(--clr-ultramarine-blue);
 		border: 2px solid transparent;
 		border-radius: 8px;
 		cursor: pointer;
 		font-family: 'Helvetica Neue';
-		font-weight: 500;
-		font-size: 18px;
-		line-height: 100%;
-		letter-spacing: 0%;
-		transition: ease-in-out 0.5s;
+		@include Textstyle(
+			$fw: 500,
+			$fs: 18px,
+			$lh: 100%,
+			$ls: 0%,
+			$clr: var(--clr-white)
+		);
 	}
 	&__card-btn:hover {
 		background-color: var(--clr-cornflower-blue);
@@ -55,29 +57,35 @@
 	&__card-title {
 		display: block;
 		font-family: 'Helvetica Neue';
-		font-weight: 500;
-		font-size: 20px;
-		line-height: 150%;
-		letter-spacing: 0%;
-		color: var(--clr-black);
 		opacity: 80%;
+		@include Textstyle(
+			$fw: 500,
+			$fs: 20px,
+			$lh: 150%,
+			$ls: 0%,
+			$clr: var(--clr-black)
+		);
 	}
 	&__card-text {
 		font-family: 'Helvetica Neue';
-		font-weight: 700;
-		font-size: 14px;
-		line-height: 20px;
-		letter-spacing: 0%;
-		color: var(--clr-dark-charcoal);
 		opacity: 80%;
+		@include Textstyle(
+			$fw: 700,
+			$fs: 14px,
+			$lh: 20px,
+			$ls: 0%,
+			$clr: var(--clr-dark-charcoal)
+		);
 	}
 	&__card-text > span {
 		font-family: 'Helvetica Neue';
-		font-weight: 500;
-		font-size: 14px;
-		line-height: 20px;
-		letter-spacing: 0%;
-		color: var(--clr-dark-charcoal);
 		opacity: 60%;
+		@include Textstyle(
+			$fw: 500,
+			$fs: 14px,
+			$lh: 20px,
+			$ls: 0%,
+			$clr: var(--clr-dark-charcoal)
+		);
 	}
 }
