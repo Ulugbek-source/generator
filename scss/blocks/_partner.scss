@@ -1,0 +1,18 @@
+.partners {
+	padding: 67px 0 57px;
+}
+.partners__title {
+	font-family: 'Helvetica Neue';
+	@include Textstyle(
+		$fw: 700,
+		$fs: 48px,
+		$lh: 100%,
+		$ls: 0%,
+		$clr: var(--clr-dark-charcoal)
+	);
+	text-align: center;
+}
+.partner {
+	margin-top: 31px;
+	@include Display($space: start, $gap: 50px);
+}

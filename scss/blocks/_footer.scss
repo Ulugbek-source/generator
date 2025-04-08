@@ -1,0 +1,168 @@
+.site-footer {
+	background-color: var(--clr-eerie-black);
+	padding: 50px 0 30px;
+}
+.footer {
+	display: flex;
+	justify-content: space-between;
+}
+.footer__logo {
+	@include Display($space: start, $gap: 6px);
+	font-family: 'Montserrat';
+	@include Textstyle(
+		$fw: 500,
+		$fs: 20px,
+		$lh: 100%,
+		$ls: 0%,
+		$clr: var(--clr-white)
+	);
+}
+.footer__logo:hover {
+	opacity: 0.8;
+}
+.footer__navigation-wrapper {
+	width: 250px;
+}
+.footer__navigation-title {
+	display: block;
+	margin-bottom: 15px;
+	font-family: 'Helvetica Neue';
+	@include Textstyle(
+		$fw: 700,
+		$fs: 20px,
+		$lh: 100%,
+		$ls: 0px,
+		$clr: var(--clr-white)
+	);
+}
+.footer__navigation-links {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+.footer__navigation > a {
+	font-family: 'Helvetica Neue';
+	@include Textstyle(
+		$fw: 400,
+		$fs: 16px,
+		$lh: 100%,
+		$ls: 0px,
+		$clr: var(--clr-white)
+	);
+}
+.footer__navigation > a:hover {
+	color: var(--clr-ultramarine-blue);
+}
+.footer__contacts {
+	width: 280px;
+}
+.footer__contacts-title {
+	display: block;
+	margin-bottom: 15px;
+	font-family: 'Helvetica Neue';
+	@include Textstyle(
+		$fw: 700,
+		$fs: 20px,
+		$lh: 100%,
+		$ls: 0px,
+		$clr: var(--clr-white)
+	);
+}
+.footer__consultation-form {
+	width: 250px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+.footer__contact-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+.footer__contact > a {
+	font-family: 'Helvetica Neue';
+	@include Textstyle(
+		$fw: 400,
+		$fs: 16px,
+		$lh: 100%,
+		$ls: 0px,
+		$clr: var(--clr-white)
+	);
+}
+.footer__contact > a:hover {
+	color: var(--clr-ultramarine-blue);
+}
+.footer__contact > span {
+	font-family: 'Helvetica Neue';
+	@include Textstyle(
+		$fw: 700,
+		$fs: 16px,
+		$lh: 100%,
+		$ls: 0px,
+		$clr: var(--clr-white)
+	);
+}
+.footer__form-title {
+	font-family: 'Helvetica Neue';
+	@include Textstyle(
+		$fw: 700,
+		$fs: 20px,
+		$lh: 100%,
+		$ls: 0px,
+		$clr: var(--clr-white)
+	);
+}
+.footer__form-input {
+	width: 200px;
+	padding: 18px 0 18px 12px;
+	background-color: transparent;
+	outline: none;
+	border: 1px solid var(--clr-white);
+	border-radius: 8px;
+	font-family: 'Helvetica Neue';
+	@include Textstyle(
+		$fw: 400,
+		$fs: 16px,
+		$lh: 100%,
+		$ls: 0px,
+		$clr: var(--clr-white)
+	);
+}
+.footer__form-input::placeholder {
+	color: var(--clr-white);
+}
+.footer__form-btn {
+	margin-top: 20px;
+	width: 200px;
+	padding: 17px 0 17px;
+	font-family: 'Helvetica Neue';
+	@include Textstyle(
+		$fw: 700,
+		$fs: 18px,
+		$lh: 100%,
+		$ls: 0px,
+		$clr: var(--clr-white)
+	);
+	background-color: #303030;
+	border: 1px solid var(--clr-white);
+	border-radius: 8px;
+	cursor: pointer;
+}
+.footer__line {
+	margin-top: 35px;
+	display: block;
+	width: 1124px;
+	border: 0.7px solid #474747;
+}
+.footer__bottom-text {
+	display: block;
+	margin-top: 18px;
+	font-family: 'Helvetica Neue';
+	@include Textstyle(
+		$fw: 400,
+		$fs: 12px,
+		$lh: 24px,
+		$ls: 0%,
+		$clr: var(--clr-white)
+	);
+}

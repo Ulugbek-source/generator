@@ -1,13 +1,19 @@
+html,
+body {
+	scroll-behavior: smooth;
+}
 // Header styles
 .site-header {
 	position: fixed;
 	background-color: var(--clr-white);
 	width: 100%;
 	top: 0;
+	z-index: 1;
 }
 .top__header {
 	@include Display($space: end, $gap: 32px);
 	padding: 26px 0;
+	border-bottom: 1px solid #3333331a;
 }
 .top__header-items {
 	@include Display($space: space-between, $gap: 20px);
@@ -127,6 +133,10 @@
 .bottom__header-input {
 	width: 117px;
 	padding: 8px 26px;
+	background-image: url(../../images/search-image.svg);
+	background-repeat: no-repeat;
+	background-size: 18px 18px;
+	background-position: left center;
 	border: none;
 	outline: none;
 	font-family: 'Helvetica Neue';

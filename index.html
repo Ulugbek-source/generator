@@ -103,7 +103,7 @@
 					<ul class="bottom__header-list">
 						<li><a href="#">Наша продукция</a></li>
 						<li><a href="#">Наши услуги</a></li>
-						<li><a href="#">O нас</a></li>
+						<li><a href="#about">O нас</a></li>
 					</ul>
 					<div class="bottom__header-btn-wrapper">
 						<input
@@ -146,7 +146,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="about-section">
+			<section id="about" class="about-section">
 				<div class="container about">
 					<img
 						src="./images/about-image.png"
@@ -251,6 +251,135 @@
 					/>
 				</div>
 			</section>
+			<section class="partners">
+				<div class="container">
+					<h2 class="partners__title">Наши партнеры</h2>
+					<div class="partner">
+						<img
+							src="./images/partner-img-1.png"
+							alt="partner images"
+							class="partner__img"
+						/>
+						<img
+							src="./images/partner-img-2.png"
+							alt="partner images"
+							class="partner__img"
+						/>
+						<img
+							src="./images/partner-img-3.png"
+							alt="partner images"
+							class="partner__img"
+						/>
+						<img
+							src="./images/partner-img-4.png"
+							alt="partner images"
+							class="partner__img"
+						/>
+						<img
+							src="./images/partner-img-5.png"
+							alt="partner images"
+							class="partner__img"
+						/>
+					</div>
+				</div>
+			</section>
+			<section class="consultation">
+				<div class="container">
+					<div class="consult">
+						<div class="consult__wrapper">
+							<h2 class="consult__title">Получите консультацию бесплатно</h2>
+							<p class="consult__text">
+								Наши специалисты перезвонят вам и дадут подробную информацию
+							</p>
+							<div class="consult__input-wrapper">
+								<input type="text" class="consult__input" placeholder="Имя" />
+								<input
+									type="tel"
+									class="consult__input"
+									placeholder="Номер телефона"
+								/>
+							</div>
+							<div class="consult__btn-wrapper">
+								<button class="consult__btn" type="submit">Отправить</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
+		<footer class="site-footer">
+			<div class="container">
+				<div class="footer">
+					<div class="footer__logo-link">
+						<a class="footer__logo" href="/"
+							><img src="./images/site-logo.svg" alt="site logo" />
+							<span>Generators</span></a
+						>
+					</div>
+					<div class="footer__navigation-wrapper">
+						<strong class="footer__navigation-title">Главная</strong>
+						<div class="footer__navigation-links">
+							<div class="footer__navigation">
+								<a href="#">Наш каталог</a>
+							</div>
+							<div class="footer__navigation">
+								<a href="#">Наши услуги</a>
+							</div>
+							<div class="footer__navigation">
+								<a href="#">O нас</a>
+							</div>
+							<div class="footer__navigation">
+								<a href="#">Оставить заявку</a>
+							</div>
+							<div class="footer__navigation">
+								<a href="#">Наши партнеры</a>
+							</div>
+							<div class="footer__navigation">
+								<a href="#">Контакты</a>
+							</div>
+						</div>
+					</div>
+					<div class="footer__contacts">
+						<strong class="footer__contacts-title">Контакты</strong>
+						<div class="footer__contact-wrapper">
+							<div class="footer__contact">
+								<span>Адрес</span>
+							</div>
+							<div class="footer__contact">
+								<a href="#"
+									>Taras shevchenko st.34.Tashkent,Mirabad Uzbekistan</a
+								>
+							</div>
+							<div class="footer__contact">
+								<span>Mail</span>
+							</div>
+							<div class="footer__contact">
+								<a href="mailto:powermet.infor@gmail.com"
+									>powermet.infor@gmail.com</a
+								>
+							</div>
+							<div class="footer__contact">
+								<a href="tel:+998900013666">+998 90 001 3 666</a>
+							</div>
+						</div>
+					</div>
+					<div class="footer__consultation-form">
+						<strong class="footer__form-title"
+							>Получите бесплатную консультацию</strong
+						>
+						<input
+							name="name and number"
+							required
+							type="text"
+							class="footer__form-input"
+							placeholder="Имя и номер телефона"
+						/>
+						<button class="footer__form-btn" type="submit">Отправить</button>
+					</div>
+				</div>
+				<span class="footer__line"></span>
+				<span class="footer__bottom-text">2023 "YOUR COMPANY" LLC</span>
+			</div>
+		</footer>
 	</body>
 </html>
